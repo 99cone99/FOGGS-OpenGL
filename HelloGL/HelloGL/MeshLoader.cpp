@@ -11,6 +11,7 @@ namespace MeshLoader
 	void LoadVertices(ifstream &inFile, Mesh &mesh);
 	void LoadColours(ifstream &inFile, Mesh &mesh);
 	void LoadIndices(ifstream &inFile, Mesh &mesh);
+	void LoadTex(ifstream& inFile, Mesh& mesh);
 
 	void LoadVertices(ifstream &inFile, Mesh &mesh)
 	{
@@ -29,19 +30,35 @@ namespace MeshLoader
 		}
 	}
 
+	void LoadTex(ifstream& inFile, Mesh& mesh)
+	{
+		inFile >> mesh.TexCoordsCount;
+
+		if (mesh.TexCoordsCount > 0)
+		{
+			mesh.TexCoords = new TexCoord[mesh.TexCoordsCount];
+
+			for (int i = 0; i < mesh.TexCoordsCount; i++)
+			{
+				inFile >> mesh.TexCoords[i].u;
+				inFile >> mesh.TexCoords[i].v;
+			}
+		}
+	}
+
 	void LoadColours(ifstream &inFile, Mesh &mesh)
 	{
-		inFile >> mesh.ColorCount;
+		inFile >> mesh.NormalCount;
 
-		if (mesh.ColorCount > 0)
+		if (mesh.NormalCount > 0)
 		{
-			mesh.Colors = new Color[mesh.ColorCount];
+			mesh.Normals = new Vector3[mesh.NormalCount];
 
-			for (int i = 0; i < mesh.ColorCount; i++)
+			for (int i = 0; i < mesh.NormalCount; i++)
 			{
-				inFile >> mesh.Colors[i].r;
-				inFile >> mesh.Colors[i].g;
-				inFile >> mesh.Colors[i].b;
+				inFile >> mesh.Normals[i].x;
+				inFile >> mesh.Normals[i].y;
+				inFile >> mesh.Normals[i].z;
 			}
 		}
 	}
@@ -61,6 +78,8 @@ namespace MeshLoader
 		}
 	}
 
+
+
 	Mesh* MeshLoader::Load(char* path)
 	{
 		Mesh* mesh = new Mesh();
@@ -77,7 +96,9 @@ namespace MeshLoader
 
 		LoadVertices(inFile, *mesh);
 		LoadColours(inFile, *mesh);
+		LoadTex(inFile, *mesh);
 		LoadIndices(inFile, *mesh);
+		
 
 		return mesh;
 	}

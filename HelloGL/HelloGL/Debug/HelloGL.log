@@ -1,2 +1,12 @@
-﻿  Cube.cpp
-  HelloGL.vcxproj -> C:\Users\b019594l\OneDrive - Staffordshire University\FOGGS\OpenGL\HelloGL\Debug\HelloGL.exe
+﻿  main.cpp
+C:\Users\b019594l\OneDrive - Staffordshire University\FOGGS\OpenGL 2.0v\OpenGL\HelloGL\HelloGL\HelloGL.h(33,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\b019594l\OneDrive - Staffordshire University\FOGGS\OpenGL 2.0v\OpenGL\HelloGL\HelloGL\HelloGL.h(91,1): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\b019594l\OneDrive - Staffordshire University\FOGGS\OpenGL 2.0v\OpenGL\HelloGL\HelloGL\HelloGL.h(92,1): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\b019594l\OneDrive - Staffordshire University\FOGGS\OpenGL 2.0v\OpenGL\HelloGL\HelloGL\HelloGL.h(93,1): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\b019594l\OneDrive - Staffordshire University\FOGGS\OpenGL 2.0v\OpenGL\HelloGL\HelloGL\HelloGL.h(95,1): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\b019594l\OneDrive - Staffordshire University\FOGGS\OpenGL 2.0v\OpenGL\HelloGL\HelloGL\HelloGL.h(96,1): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\b019594l\OneDrive - Staffordshire University\FOGGS\OpenGL 2.0v\OpenGL\HelloGL\HelloGL\HelloGL.h(97,1): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\b019594l\OneDrive - Staffordshire University\FOGGS\OpenGL 2.0v\OpenGL\HelloGL\HelloGL\HelloGL.h(99,1): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\b019594l\OneDrive - Staffordshire University\FOGGS\OpenGL 2.0v\OpenGL\HelloGL\HelloGL\HelloGL.h(100,1): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\b019594l\OneDrive - Staffordshire University\FOGGS\OpenGL 2.0v\OpenGL\HelloGL\HelloGL\HelloGL.h(101,1): warning C4305: '=': truncation from 'double' to 'float'
+  HelloGL.vcxproj -> C:\Users\b019594l\OneDrive - Staffordshire University\FOGGS\OpenGL 2.0v\OpenGL\HelloGL\Debug\HelloGL.exe
